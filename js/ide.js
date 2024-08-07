@@ -1,11 +1,11 @@
-const API_KEY = ""; // Get yours for free at https://judge0.com/ce and https://judge0.com/extra-ce
+const API_KEY = "ed2946f252msh23713999506b8e6p1535f4jsn449886477d52"; // Get yours for free at https://judge0.com/ce and https://judge0.com/extra-ce
 
 const AUTH_HEADERS = API_KEY ? {
-    "X-RapidAPI-Key": API_KEY
+    "x-rapidapi-key": API_KEY
 } : {};
 
 var defaultUrl = localStorageGetItem("api-url") || "https://judge0-ce.p.rapidapi.com";
-var extraApiUrl = "https://judge0-extra-ce.p.rapidapi.com";
+var extraApiUrl = "https://judge0-ce.p.rapidapi.com";
 
 if (location.hostname == "ide.judge0.com") {
     defaultUrl = "https://ce.judge0.com";
